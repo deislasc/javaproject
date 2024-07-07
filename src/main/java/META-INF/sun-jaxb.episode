@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v2.3.6 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.04.16 a las 12:05:12 AM CST 
+
+  -->
+  <bindings xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.SIIBETA.RCService.stub"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfKeyValueOfstringstring">
+      <class ref="com.SIIBETA.RCService.stub.ArrayOfKeyValueOfstringstring"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://tempuri.org/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.SIIBETA.RCService.stub"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:GetUserToken">
+      <class ref="com.SIIBETA.RCService.stub.GetUserToken"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:GetUserTokenResponse">
+      <class ref="com.SIIBETA.RCService.stub.GetUserTokenResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:GPSAssetTracking">
+      <class ref="com.SIIBETA.RCService.stub.GPSAssetTracking"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:GPSAssetTrackingResponse">
+      <class ref="com.SIIBETA.RCService.stub.GPSAssetTrackingResponse"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://schemas.datacontract.org/2004/07/IronTracking" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.SIIBETA.RCService.stub"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:UserTokenResult">
+      <class ref="com.SIIBETA.RCService.stub.UserTokenResult"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfEvent">
+      <class ref="com.SIIBETA.RCService.stub.ArrayOfEvent"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfAppointResult">
+      <class ref="com.SIIBETA.RCService.stub.ArrayOfAppointResult"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Event">
+      <class ref="com.SIIBETA.RCService.stub.Event"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Customer">
+      <class ref="com.SIIBETA.RCService.stub.Customer"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AppointResult">
+      <class ref="com.SIIBETA.RCService.stub.AppointResult"/>
+    </bindings>
+  </bindings>
+</bindings>

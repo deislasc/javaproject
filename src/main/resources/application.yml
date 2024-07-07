@@ -1,0 +1,51 @@
+server:
+  port: 8782
+  servlet:
+    contextPath: /administracion
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    leaseRenewalIntervalInSeconds: 500
+    lease-expiration-duration-in-seconds: 500
+  client:
+    enabled: true
+    register-with-eureka: true
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 500
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.eglobal.ebind.atm: DEBUG
+spring:
+  codec:
+    max-in-memory-size: 1000MB
+  application:
+    name: mx-sb-administracion-ms-main
+    jackson:
+      time-zone: America/Mexico_City
+  datasource:
+    url: jdbc:postgresql://qxopu2.stackhero-network.com:5432/sb_servicios
+    username: admin
+    password: Mdv9JsFgstLDMXW2Qs19vtRazqSBntMV
+    driver: org.postgresql.Driver
+    poolName: ${spring.application.name}-poolg
+    maximumPoolSize: 20
+    minimumIdle: 2
+    properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 256
+      prepStmtCacheSqlLimit: 2048
+      useServerPrepStmts: true
+  jpa:
+    properties:
+      hibernate:
+        default_schema:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        ##ddl-auto: update
+        temp:
+          use_jdbc_metadata_defaults: false
+        show_sql: true
